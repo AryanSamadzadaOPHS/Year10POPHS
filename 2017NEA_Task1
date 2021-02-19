@@ -1,0 +1,29 @@
+def main():
+
+    print("League registration")
+    name = input("Enter first name:  >>>")
+    nickname = input("Enter nickname: >>>")
+    email = input("Enter email address: >>>")
+
+    skill= "Expert"
+    skill = input("Enter skill level - E for expert or C for casual : >>>")
+
+
+
+    print("Please review your details")
+    print ("First name is", name)
+    print ("Nickname is",nickname)
+    print ("Email is",email)
+    if skill == ("E"):
+     print('skill level is Expert')
+    else: 
+     print('skill level is Casual')
+    Confirm = input("please confirm that these details are correct- Y/N ")
+    if Confirm == "N":
+        main()
+    else:
+        print("Bye!")
+        main()
+
+
+main()
