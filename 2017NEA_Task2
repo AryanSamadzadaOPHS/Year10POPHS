@@ -1,0 +1,44 @@
+print("Welcome message")
+
+def main():
+
+    email = input("Enter email address: >>>")
+
+
+    skill= "Expert"
+    skill = input("Enter skill level - E for expert or C for casual : >>>")
+    if skill == "E":
+        print ("")
+    elif skill == "C":
+        print ("")
+    else:
+        print("Error!! Skill level not recognised, try again!")
+        main()
+
+
+    country = input(" Enter country UK/US/AU: >>>")
+    if country == "AU":
+        print("The AU fee is: 90 AUD")
+    elif country == "US":
+        print("The USD fee is: 67.5 USD")
+    elif country == "UK":
+        print("The UK fee is: 45 GBP")
+    else:
+        print("Error!! country not recognised, try again!")
+        main()
+
+
+    loop = input("Caculate another fee? - Y/N >>>")
+    if loop =="Y":
+      main()
+    if loop == "N":
+        print("Bye!")
+        exit()
+    else:
+      print("Error!! oh dear")
+      main()
+
+
+
+
+main()
